@@ -9,7 +9,8 @@
 		"type": "AzureBlob",
 		"typeProperties": {
 			"format": {
-				"type": "JsonFormat"
+				"type": "JsonFormat",
+				"filePattern": "arrayOfObjects"
 			},
 			"fileName": "ExportedJSONFromMongoDB.json",
 			"folderPath": "migrationtest/tempfiles"

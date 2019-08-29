@@ -1,0 +1,22 @@
+{
+	"name": "1_ExportedCSVFromMongoDB",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Blob4TempConnection",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "tempfiles",
+				"container": "migrationtest"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
